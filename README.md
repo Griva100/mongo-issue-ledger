@@ -2,7 +2,7 @@
 
 A small support-ticket dashboard and REST API built with React, TypeScript, Express, Mongoose and MongoDB. Create tickets, filter the queue, update priorities and track workload through an aggregation report.
 
-This is a new personal project built with AI assistance. It uses a real MongoDB database; the dashboard does not substitute browser storage or mock responses for persistence.
+This is a personal project. It uses a real MongoDB database; the dashboard does not substitute browser storage or mock responses for persistence.
 
 ## Features
 
