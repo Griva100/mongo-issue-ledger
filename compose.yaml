@@ -1,0 +1,14 @@
+services:
+  mongo:
+    image: mongo:8.0
+    ports:
+      - "127.0.0.1:27107:27017"
+    volumes:
+      - issue-ledger-mongo:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "quit(db.adminCommand({ping:1}).ok ? 0 : 1)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+volumes:
+  issue-ledger-mongo:
